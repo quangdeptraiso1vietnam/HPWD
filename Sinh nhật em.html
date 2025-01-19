@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chúc mừng Sinh Nhật Vi Yêu</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+        body {
+            font-family: 'Pacifico', cursive;
+            background-color: #ffe6f2;
+            text-align: center;
+            padding: 50px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        h1 {
+            color: #ff66b3;
+            font-size: 60px;
+            margin-bottom: 20px;
+            animation: fadeIn 2s ease-in;
+        }
+
+        p {
+            font-size: 26px;
+            color: #5a5a5a;
+            animation: slideIn 1.5s ease-out;
+        }
+
+        .flower {
+            width: 150px;
+            margin-top: 30px;
+            animation: rotateFlower 3s infinite;
+        }
+
+        .login-form {
+            display: block;
+            margin-top: 40px;
+            padding: 20px;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 300px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        input[type="text"], input[type="password"] {
+            width: 90%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        input[type="submit"] {
+            background-color: #ff66b3;
+            color: white;
+            border: none;
+            padding: 10px;
+            border-radius: 5px;
+            width: 100%;
+            font-size: 18px;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #ff3399;
+        }
+
+        .btn-container {
+            margin-top: 30px;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            font-size: 20px;
+            color: white;
+            background-color: #ff66b3;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin: 10px;
+            text-decoration: none;
+        }
+
+        .btn:hover {
+            background-color: #ff3399;
+        }
+
+        .sticker {
+            width: 120px;
+            position: absolute;
+            animation: stickerFloat 4s ease-in-out infinite;
+        }
+
+        .sticker1 {
+            top: 20px;
+            right: 10px;
+        }
+
+        .sticker2 {
+            top: 250px;
+            left: 20px;
+        }
+
+        .sticker3 {
+            top: 10px;
+            left: 10px;
+        }
+
+        .sticker4 {
+            bottom: 20px;
+            right: 10px;
+            display: none;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        @keyframes slideIn {
+            from { transform: translateY(-50px); }
+            to { transform: translateY(0); }
+        }
+
+        @keyframes rotateFlower {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+
+        @keyframes stickerFloat {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
+        }
+
+        .heart {
+            position: absolute;
+            animation: floatHeart 4s ease-in-out infinite;
+            color: #ff6699;
+            font-size: 30px;
+            display: none;
+        }
+
+        .firework {
+            position: absolute;
+            width: 10px;
+            height: 10px;
+            background: radial-gradient(circle, red, yellow, transparent);
+            border-radius: 50%;
+            animation: explode 2s ease-in-out infinite;
+            display: none;
+        }
+
+        @keyframes explode {
+            0% { transform: scale(0); opacity: 1; }
+            100% { transform: scale(3); opacity: 0; }
+        }
+
+        @keyframes floatHeart {
+            0% { transform: translateY(0) scale(1); opacity: 1; }
+            50% { transform: translateY(-20px) scale(1.2); opacity: 0.8; }
+            100% { transform: translateY(-40px) scale(1); opacity: 0; }
+        }
+    </style>
+</head>
+<body>
+    <audio id="background-music" autoplay loop>
+        <source src="c:\Users\Admin\Downloads\XungDoiCuoiThoi-LeThienHieu-6010565.mp3" type="audio/mpeg">
+        Trình duyệt của bạn không hỗ trợ phát nhạc.
+    </audio>
+    <h1>Chúc Mừng Vi yêu sinh nhật vui vẻ :>>></h1>
+
+    <div class="login-form">
+        <h2>Đăng nhập</h2>
+        <form action="#" method="POST" onsubmit="return checkLogin()">
+            <input type="text" id="username" placeholder="Ngày sinh Vi" required>
+            <input type="password" id="password" placeholder="Ngày sinh anh" required>
+            <input type="submit" value="Đăng nhập">
+        </form>
+    </div>
+
+    <div class="letter-container" style="display: none;">
+        <h2>Gửi Tình yêu bé nhỏ của anh</h2>
+        <p>Hôm nay, ngày mà 17 năm trước 1 thiên thần xuất hiện. Và đó chính là em Phạm Thị Tường Vi .</p>
+        <p>Anh cảm ơn em vì trong suốt 2 tháng 7 ngày em đã đến với anh, em cho anh những cảm xúc anh chưa từng có
+            Buồn có, vui có, Hạnh phúc cũng có, nhưng đặc biệt nhất, đó là tình yêu. </p>
+        <p>Trong thời điểm hiện tại, em chính là người mà anh yêu thương nhất, và anh cũng muốn em chính là người
+            để anh có thể bù đắp cho sau này, Anh muốn cưới em làm vợ..</p>
+        <p>Anh cảm thấy anh tệ lắm, anh vụng, anh vô tâm, anh kh quan tâm gần gũi che chở em, hay làm em buồn..</p>
+        <p>Nhưng anh vẫn yêu em lắm! Quan điểm của anh là khi đã yêu 1 người thì sẽ yêu hết đời. Mong em hãy 
+            cố gắng kh vì anh bỏ anh nha, anh thương em lắm</p>
+        <p>Anh chúc em 1 sinh nhật thật vui vẻ, cầu chúc em luôn sức khỏe,không bệnh vặt, mong em luôn hạnh phúc,
+            bình an, mong em luôn vui vẻ, mong cho cuộc sống của em luôn tốt, mong em học giỏi để đậu Đhoc..
+        </p>
+        <p>ANH YÊU EM!</p>
+
+        <div class="btn-container">
+            <a href="https://www.youtube.com/watch?v=xvFZjo5PgG0" class="btn" target="_blank">bấm vô thử coi</a>
+            <a href="https://www.youtube.com/watch?v=ZpIK2tyY_XA" class="btn" target="_blank">bấm vô thử coi</a>
+        </div>
+
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTe_6HgAGKNyldNujgAu5M3r9ojckBemVFzUg&s" alt="Ảnh hoa chúc mừng" class="flower">
+        
+        <img src="https://insieutoc.vn/wp-content/uploads/2024/08/hinh-anh-sticker-meo-dep.jpg" alt="Sticker dễ thương" class="sticker sticker2">
+        <img src="c:\Users\Admin\Downloads\z6240353665102_bc9e9a04e01ab68bbdb20ad417a3bc5c.jpg" class="sticker sticker4">
+        <div class="heart heart1" style="top: 200px; left: 50px;">❤️</div>
+        <div class="heart heart2" style="top: 300px; right: 80px;">💖</div>
+        <div class="heart heart3" style="bottom: 100px; left: 150px;">💕</div>
+        <div class="firework firework1" style="top: 200px; left: 50%;">💕</div>
+        <div class="firework firework2" style="top: 400px; left: 30%;">💕</div>
+        <div class="firework firework3" style="top: 300px; right: 50%;">💖</div>
+    </div>
+
+    <script>
+        function checkLogin() {
+            const username = document.getElementById("username").value;
+            const password = document.getElementById("password").value;
+
+            if (username === "20/01/2008" && password === "21/10/2006") {
+                document.querySelector(".login-form").style.display = "none";
+                document.querySelector(".letter-container").style.display = "block";
+
+                document.querySelectorAll(".heart, .firework, .sticker4").forEach((el) => {
+                    el.style.display = "block";
+                });
+
+                return false;
+            } else {
+                alert("Sai ngày sinh! Thử lại nè :3");
+                return false;
+            }
+        }
+    </script>
+</body>
+</html>
